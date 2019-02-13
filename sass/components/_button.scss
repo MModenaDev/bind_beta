@@ -1,0 +1,51 @@
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    position: relative;
+    cursor: pointer;
+
+    box-shadow: .4rem 1rem 2rem rgba($color-black, .5)
+  }
+
+  &--register-beta {
+    background-color: $color-white;
+    backface-visibility: hidden;
+    outline: none;
+    transform: skewX(-20deg);
+    padding: 1rem 4.5rem;
+    color: $color-purple;
+
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    animation-name: fadeIn;
+    animation-delay: 1.2s;
+    animation-duration: 1s;
+
+    transition: all .3s;
+
+    &-span { // Para que o texto não fique torto
+      display: block;
+      transform: skewX(20deg);
+    }
+
+    &:hover {
+      transform: translateY(-.8rem) skewX(-20deg) scale(1.03);
+      box-shadow: .6rem 1.5rem 3rem rgba($color-black, .5);
+    }
+
+    &:active {
+      transform: translateY(-.4rem) skewX(-20deg) scale(1.03);
+      box-shadow: .45rem 1.1rem 2.25rem rgba($color-black, .5);
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+  }
+}

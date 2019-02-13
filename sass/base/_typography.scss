@@ -1,0 +1,60 @@
+.heading-primary {
+
+  text-transform: uppercase;
+  text-align: center;
+  backface-visibility: hidden;
+
+  &-main {
+    font-size: 15rem;
+    display: block;
+    letter-spacing: 3rem;
+    margin-right: -3rem;
+    font-weight: 900;
+    opacity:0;
+
+    text-shadow: .2rem .5rem 1rem rgba(0,0,0, .3);
+
+    animation-fill-mode: forwards;
+    animation-name: moveInBottom;
+    animation-duration: .6s;
+    animation-timing-function: ease-out;
+  }
+
+  &-sub {
+    margin-top: -2rem;
+    font-size: 3rem;
+    display: block;
+    letter-spacing: .66rem;
+    margin-right: -.66rem;
+    font-weight: 700;
+    opacity:0;
+
+    text-shadow: .15rem .3rem .8rem rgba(0,0,0, .3);
+
+    animation-fill-mode:forwards;
+    animation-name: moveInRight;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .6s;
+  }
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  text-align: center;
+  backface-visibility: hidden;
+
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  //margin-right: -1rem; Dando problema. Criando blank space na direita e.e
+  font-weight: 900;
+  perspective: 1000;
+  text-shadow: .15rem .3rem .8rem rgba(0,0,0, .3);
+
+  background-image: linear-gradient(to right,
+  rgba($color-purple-dark-1, .9),
+  rgba($color-blue-dark, .9),
+  rgba($color-purple-light-2, .8));
+  -webkit-background-clip: text;
+  color: transparent;
+}
