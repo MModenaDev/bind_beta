@@ -3,7 +3,6 @@
 	width: 50px;
 	height: 60px;
   display: inline-block;
-	position: relative;
 
 }
 
@@ -12,7 +11,6 @@
 	width: 60px;
 	height: 60px;
   display: inline-block;
-	position: relative;
 }
 
 .icon--twitter {
@@ -20,9 +18,8 @@
 	width: 46px;
 	height: 60px;
   display: inline-block;
-	position: relative;
 }
 
-.icons {
-	float: right;
+h3 div.icons{
+	display: inline-block;
 }
