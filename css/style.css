@@ -220,25 +220,22 @@ body {
   background: url("../img/social-media.png") no-repeat -76px -133px;
   width: 42px;
   height: 30px;
-  display: inline-block;
-  position: relative; }
+  display: inline-block; }
 
 .icon--facebook {
   background: url("../img/social-media.png") no-repeat -89px -77px;
   width: 18px;
   height: 38px;
-  display: inline-block;
-  position: relative; }
+  display: inline-block; }
 
 .icon--twitter {
   background: url("../img/social-media.png") -86px -25px;
   width: 28px;
   height: 36px;
-  display: inline-block;
-  position: relative; }
+  display: inline-block; }
 
-.icons {
-  float: right; }
+h3 div.icons {
+  display: inline-block; }
 
 .row {
   max-width: 114rem;
