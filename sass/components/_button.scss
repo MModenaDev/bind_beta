@@ -41,7 +41,7 @@
     }
 
     &:active {
-      transform: translateY(-.4rem) skewX(-20deg) scale(1.03);
+      transform: translate(-50%, -50%) translateY(-.4rem) skewX(-20deg) scale(1.03);
       box-shadow: .45rem 1.1rem 2.25rem rgba($color-black, .5);
     }
   }

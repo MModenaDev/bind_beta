@@ -119,7 +119,7 @@ body {
     transform: translate(-50%, -50%) translateY(-0.8rem) skewX(-20deg) scale(1.03);
     box-shadow: 0.6rem 1.5rem 3rem rgba(0, 0, 0, 0.5); }
   .btn--register-beta:active {
-    transform: translateY(-0.4rem) skewX(-20deg) scale(1.03);
+    transform: translate(-50%, -50%) translateY(-0.4rem) skewX(-20deg) scale(1.03);
     box-shadow: 0.45rem 1.1rem 2.25rem rgba(0, 0, 0, 0.5); }
 
 .btn--white {
@@ -216,23 +216,29 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.icon-youtube {
-  background: url("../../img/social-media.png") no-repeat -120px -33px;
-  width: 50px;
-  height: 60px;
-  display: inline-block; }
+.icon--youtube {
+  background: url("../img/social-media.png") no-repeat -76px -133px;
+  width: 42px;
+  height: 30px;
+  display: inline-block;
+  position: relative; }
 
-.icon-facebook {
-  background: url("../../img/social-media.png") no-repeat -115px -166px;
-  width: 60px;
-  height: 60px;
-  display: inline-block; }
+.icon--facebook {
+  background: url("../img/social-media.png") no-repeat -89px -77px;
+  width: 18px;
+  height: 38px;
+  display: inline-block;
+  position: relative; }
 
-.icon-twitter {
-  background: url("../../img/social-media.png") no-repeat -121px -273px;
-  width: 46px;
-  height: 60px;
-  display: inline-block; }
+.icon--twitter {
+  background: url("../img/social-media.png") -86px -25px;
+  width: 28px;
+  height: 36px;
+  display: inline-block;
+  position: relative; }
+
+.icons {
+  float: right; }
 
 .row {
   max-width: 114rem;
@@ -268,15 +274,16 @@ body {
   position: relative;
   font-size: 3rem; }
 
-.section-about {
+.section--about {
   position: relative;
   color: #932bdb;
   padding-top: 5rem;
   height: 100vh; }
 
-.section-footer {
+.section--footer {
   position: relative;
   background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
   color: #fff;
   padding-top: 5rem;
-  height: 20vh; }
+  height: 20vh;
+  font-size: 2rem; }

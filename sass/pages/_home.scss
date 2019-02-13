@@ -1,4 +1,4 @@
-.section-about {
+.section--about {
 
   position: relative;
   color: $color-purple;
@@ -10,7 +10,7 @@
   // rgba($color-blue-dark, .9),
 }
 
-.section-footer {
+.section--footer {
 
   position: relative;
   background-image: linear-gradient(to right,
@@ -19,5 +19,5 @@
   color: $color-white;
   padding-top: 5rem;
   height: 20vh;
-
+  font-size: $footer-font-size;
 }
