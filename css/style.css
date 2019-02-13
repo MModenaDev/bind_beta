@@ -76,7 +76,7 @@ body {
   font-weight: 900;
   perspective: 1000;
   text-shadow: 0.15rem 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(to right, rgba(37, 2, 51, 0.9), rgba(66, 16, 124, 0.9), rgba(146, 24, 219, 0.8));
+  background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
   -webkit-background-clip: text;
   color: transparent; }
 
@@ -103,7 +103,7 @@ body {
   outline: none;
   transform: skewX(-20deg);
   padding: 1rem 4.5rem;
-  color: #551a8b;
+  color: #932bdb;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-name: fadeIn;
@@ -144,11 +144,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to bottom left, rgba(37, 2, 51, 0.9), rgba(66, 16, 124, 0.9), rgba(146, 24, 219, 0.8)); }
+        background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8)); }
       .card__side--back-2 {
-        background-image: linear-gradient(to bottom left, rgba(37, 2, 51, 0.9), rgba(66, 16, 124, 0.9), rgba(146, 24, 219, 0.8)); }
+        background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8)); }
       .card__side--back-3 {
-        background-image: linear-gradient(to bottom left, rgba(37, 2, 51, 0.9), rgba(66, 16, 124, 0.9), rgba(146, 24, 219, 0.8)); }
+        background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8)); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -234,7 +234,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(165, 76, 255, 0.9), rgba(127, 0, 255, 0.9), rgba(102, 0, 204, 0.9), rgba(64, 0, 127, 0.8)), url(../img/bind_app.jpg);
+  background-image: linear-gradient(to bottom, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8)), url(../img/bind_app.jpg);
   background-size: cover;
   background-position: top;
   height: 100vh;
@@ -250,6 +250,6 @@ body {
 
 .section-about {
   position: relative;
-  color: #551a8b;
+  color: #932bdb;
   padding-top: 5rem;
   height: 100vh; }
