@@ -20,6 +20,22 @@
   display: inline-block;
 }
 
-h3 div.icons{
+.section--footer h3 {
 	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+}
+
+div.icons {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+}
+
+div.icons span {
+	margin-left: 1em;
 }
