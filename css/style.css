@@ -207,6 +207,24 @@ body {
     width: 90%;
     text-align: center; }
 
+.icon-youtube {
+  background: url("../../img/social-media.png") no-repeat -120px -33px;
+  width: 50px;
+  height: 60px;
+  display: inline-block; }
+
+.icon-facebook {
+  background: url("../../img/social-media.png") no-repeat -115px -166px;
+  width: 60px;
+  height: 60px;
+  display: inline-block; }
+
+.icon-twitter {
+  background: url("../../img/social-media.png") no-repeat -121px -273px;
+  width: 46px;
+  height: 60px;
+  display: inline-block; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
