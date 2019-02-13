@@ -93,7 +93,6 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 3rem;
-  position: relative;
   cursor: pointer;
   box-shadow: 0.4rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
@@ -101,9 +100,12 @@ body {
   background-color: #fff;
   backface-visibility: hidden;
   outline: none;
-  transform: skewX(-20deg);
   padding: 1rem 4.5rem;
   color: #932bdb;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewX(-20deg);
   opacity: 0;
   animation-fill-mode: forwards;
   animation-name: fadeIn;
@@ -114,7 +116,7 @@ body {
     display: block;
     transform: skewX(20deg); }
   .btn--register-beta:hover {
-    transform: translateY(-0.8rem) skewX(-20deg) scale(1.03);
+    transform: translate(-50%, -50%) translateY(-0.8rem) skewX(-20deg) scale(1.03);
     box-shadow: 0.6rem 1.5rem 3rem rgba(0, 0, 0, 0.5); }
   .btn--register-beta:active {
     transform: translateY(-0.4rem) skewX(-20deg) scale(1.03);
@@ -207,6 +209,13 @@ body {
     width: 90%;
     text-align: center; }
 
+.bind-logo--main {
+  position: absolute;
+  height: 20rem;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -240,13 +249,6 @@ body {
   height: 100vh;
   position: relative;
   font-size: 3rem; }
-  .header__text-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center; }
 
 .section-about {
   position: relative;

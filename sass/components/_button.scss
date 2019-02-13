@@ -6,19 +6,20 @@
     text-decoration: none;
     display: inline-block;
     font-size: 3rem;
-    position: relative;
     cursor: pointer;
-
-    box-shadow: .4rem 1rem 2rem rgba($color-black, .5)
+    box-shadow: .4rem 1rem 2rem rgba($color-black, .5);
   }
 
   &--register-beta {
     background-color: $color-white;
     backface-visibility: hidden;
     outline: none;
-    transform: skewX(-20deg);
     padding: 1rem 4.5rem;
     color: $color-purple;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-20deg);
 
     opacity: 0;
     animation-fill-mode: forwards;
@@ -35,7 +36,7 @@
     }
 
     &:hover {
-      transform: translateY(-.8rem) skewX(-20deg) scale(1.03);
+      transform: translate(-50%, -50%) translateY(-.8rem) skewX(-20deg) scale(1.03);
       box-shadow: .6rem 1.5rem 3rem rgba($color-black, .5);
     }
 
