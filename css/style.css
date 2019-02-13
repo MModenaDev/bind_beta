@@ -253,3 +253,10 @@ body {
   color: #932bdb;
   padding-top: 5rem;
   height: 100vh; }
+
+.section-footer {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
+  color: #fff;
+  padding-top: 5rem;
+  height: 20vh; }
