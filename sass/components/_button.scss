@@ -16,14 +16,16 @@
     outline: none;
     padding: 1rem 4.5rem;
     color: $color-purple;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%) skewX(-20deg);
 
+    position: absolute;
+    top: -webkit-calc(#{$logo-percent-top} + 15rem);
+    top:    -moz-calc(#{$logo-percent-top} + 15rem);
+    top:         calc(#{$logo-percent-top} + 15rem);
+    left: 50%;
+
+    transform: translate(-50%, -50%) skewX(-20deg);
     opacity: 0;
     animation-fill-mode: forwards;
-
     animation-name: fadeIn;
     animation-delay: 1.2s;
     animation-duration: 1s;

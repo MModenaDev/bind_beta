@@ -1,9 +1,21 @@
-.section--footer h3 {
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 5%;
-	transform: translateY(-50%);
+.section--footer {
+
+  position: relative;
+  background-image: linear-gradient(to right,
+  rgba($color-purple-dark, .9),
+  rgba($color-purple, .8));
+  color: $color-white;
+  padding-top: 5rem;
+  height: 20rem;
+  font-size: $footer-font-size;
+
+	& h3 {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 5%;
+		transform: translateY(-50%);
+	}
 }
 
 div.icons {

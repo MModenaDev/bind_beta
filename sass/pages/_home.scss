@@ -7,15 +7,3 @@
   background-color: $color-white-darker;
 
 }
-
-.section--footer {
-
-  position: relative;
-  background-image: linear-gradient(to right,
-  rgba($color-purple-dark, .9),
-  rgba($color-purple, .8));
-  color: $color-white;
-  padding-top: 5rem;
-  height: 20vh;
-  font-size: $footer-font-size;
-}

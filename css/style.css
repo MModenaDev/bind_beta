@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -31,6 +48,18 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -104,7 +133,9 @@ body {
   padding: 1rem 4.5rem;
   color: #932bdb;
   position: absolute;
-  top: 70%;
+  top: -webkit-calc(50% + 15rem);
+  top: -moz-calc(50% + 15rem);
+  top: calc(50% + 15rem);
   left: 50%;
   transform: translate(-50%, -50%) skewX(-20deg);
   opacity: 0;
@@ -240,29 +271,37 @@ body {
 i {
   margin-left: 0.5em; }
 
+.icons-effect {
+  transition: all .2s; }
+  .icons-effect:hover {
+    transform: scale(1.1); }
+
 .fab {
   color: #fff; }
 
 .fa-chevron-circle-up {
-  color: #932bdb; }
-
-.fa-chevron-circle-up:hover {
-  transform: translateY(0.2rem) scale(1.02);
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  color: #932bdb;
   border-radius: 50%;
-  border-color: #932bdb; }
+  transition: all .3s ease-out; }
+  .fa-chevron-circle-up:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.4); }
+  .fa-chevron-circle-up:active {
+    transform: translateY(-0.6rem);
+    box-shadow: 0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.3); }
 
 #home-btn {
   display: none;
   position: fixed;
-  bottom: 22%;
+  bottom: 24rem;
   right: 2%;
-  z-index: 666; }
+  z-index: 666;
+  font-size: 5rem; }
 
 .bind-logo--main {
   position: absolute;
   height: 20rem;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
@@ -278,12 +317,19 @@ i {
   top: 10%;
   left: 25%; }
 
-.section--footer h3 {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%); }
+.section--footer {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
+  color: #fff;
+  padding-top: 5rem;
+  height: 20rem;
+  font-size: 2rem; }
+  .section--footer h3 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%); }
 
 div.icons {
   display: inline-block;
@@ -332,11 +378,3 @@ div.icons {
   padding-top: 5rem;
   height: 100vh;
   background-color: #eee; }
-
-.section--footer {
-  position: relative;
-  background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
-  color: #fff;
-  padding-top: 5rem;
-  height: 20vh;
-  font-size: 2rem; }

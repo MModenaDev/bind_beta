@@ -4,7 +4,7 @@
   &--main {
     position: absolute;
     height: 20rem;
-    top: 45%;
+    top: $logo-percent-top;
     left: 50%;
     transform: translate(-50%, -50%);
   }
