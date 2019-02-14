@@ -1,10 +1,18 @@
-window.onscroll = function() {scrollFunction()};
+$(document).ready(function(){
 
-function scrollFunction() {
-  var h = 0.75 * window.innerHeight;
-  if (document.body.scrollTop > h || document.documentElement.scrollTop > h) {
-    document.getElementById("home-btn").style.display = "block";
-  } else {
-    document.getElementById("home-btn").style.display = "none";
-  }
-}
+  //Show hide button on scroll
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 300) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop: 0}, 1000);
+    $('.scrollToTop').animate({opacity: 0}, 800, function(){
+      $('.scrollToTop').animate({opacity: 1});
+    });
+  });
+});

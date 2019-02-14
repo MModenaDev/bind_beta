@@ -18,25 +18,22 @@ i {
 
 .fa-chevron-circle-up {
   color: $color-purple;
-	border-radius: 50%;
+	padding: -5rem;
 	transition: all .3s ease-out;
 
 	&:hover {
-		transform: translateY(-1rem);
-	  box-shadow: .2rem .5rem 1rem rgba($color-black, .4);
+		transform: translateY(-1rem) scale(1.05);
 	}
 
 	&:active {
-		transform: translateY(-.6rem);
-	  box-shadow: .2rem .4rem .8rem rgba($color-black, .3);
+		transform: translateY(-.6rem) scale(1.03);
 	}
 }
 
-#home-btn {
-  display: none;
+.scrollToTop {
 	position: fixed;
+	display: none;
 	bottom: 24rem;
 	right: 2%;
-	z-index: 666;
-	font-size: 5rem;
+	font-size: 1.5rem;
 }

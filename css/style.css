@@ -281,22 +281,19 @@ i {
 
 .fa-chevron-circle-up {
   color: #932bdb;
-  border-radius: 50%;
+  padding: -5rem;
   transition: all .3s ease-out; }
   .fa-chevron-circle-up:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.4); }
+    transform: translateY(-1rem) scale(1.05); }
   .fa-chevron-circle-up:active {
-    transform: translateY(-0.6rem);
-    box-shadow: 0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.3); }
+    transform: translateY(-0.6rem) scale(1.03); }
 
-#home-btn {
-  display: none;
+.scrollToTop {
   position: fixed;
+  display: none;
   bottom: 24rem;
   right: 2%;
-  z-index: 666;
-  font-size: 5rem; }
+  font-size: 1.5rem; }
 
 .bind-logo--main {
   position: absolute;
