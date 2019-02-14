@@ -3,13 +3,30 @@
 
   &--main {
     position: absolute;
-    height: 20rem;
+    height: 14rem;
     top: $logo-percent-top;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(tab-land) {
+      height: 21rem;
+    }
   }
 
   &--sub {
+    position: absolute;
+    height: 4rem;
+    top: -webkit-calc(#{$logo-percent-top} + 9.5rem);
+    top:    -moz-calc(#{$logo-percent-top} + 9.5rem);
+    top:         calc(#{$logo-percent-top} + 9.5rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    @include respond(tab-land) {
+      height: 6rem;
+      top: -webkit-calc(#{$logo-percent-top} + 14em);
+      top:    -moz-calc(#{$logo-percent-top} + 14em);
+      top:         calc(#{$logo-percent-top} + 14rem);
+    }
   }
 }

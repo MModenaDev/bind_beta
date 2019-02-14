@@ -122,20 +122,20 @@ body {
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   display: inline-block;
-  font-size: 3rem;
   cursor: pointer;
   box-shadow: 0.4rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
 .btn--register-beta {
+  font-size: 3rem;
   background-color: #fff;
   backface-visibility: hidden;
   outline: none;
   padding: 1rem 4.5rem;
   color: #932bdb;
   position: absolute;
-  top: -webkit-calc(50% + 15rem);
-  top: -moz-calc(50% + 15rem);
-  top: calc(50% + 15rem);
+  top: -webkit-calc(45% + 17rem);
+  top: -moz-calc(45% + 17rem);
+  top: calc(45% + 17rem);
   left: 50%;
   transform: translate(-50%, -50%) skewX(-20deg);
   opacity: 0;
@@ -144,6 +144,13 @@ body {
   animation-delay: 1.2s;
   animation-duration: 1s;
   transition: all .3s; }
+  @media only screen and (max-width: 75em) {
+    .btn--register-beta {
+      font-size: 3.5rem;
+      padding: 2.5rem 12rem;
+      top: -webkit-calc(45% + 25rem);
+      top: -moz-calc(45% + 25rem);
+      top: calc(45% + 25rem); } }
   .btn--register-beta-span {
     display: block;
     transform: skewX(20deg); }
@@ -297,10 +304,28 @@ i {
 
 .bind-logo--main {
   position: absolute;
-  height: 20rem;
-  top: 50%;
+  height: 14rem;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 75em) {
+    .bind-logo--main {
+      height: 21rem; } }
+
+.bind-logo--sub {
+  position: absolute;
+  height: 4rem;
+  top: -webkit-calc(45% + 9.5rem);
+  top: -moz-calc(45% + 9.5rem);
+  top: calc(45% + 9.5rem);
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 75em) {
+    .bind-logo--sub {
+      height: 6rem;
+      top: -webkit-calc(45% + 14em);
+      top: -moz-calc(45% + 14em);
+      top: calc(45% + 14rem); } }
 
 .card {
   color: #fff;
