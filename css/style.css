@@ -311,11 +311,12 @@ i {
 .scrollToTop {
   position: fixed;
   display: none;
-  bottom: 24rem;
+  bottom: 16rem;
   right: 2%;
   font-size: 1.5rem; }
   @media only screen and (max-width: 75em) {
     .scrollToTop {
+      bottom: 20rem;
       right: 3%;
       font-size: 2rem; } }
 
@@ -366,18 +367,25 @@ i {
   left: 25%; }
 
 .section--footer {
+  font-size: 2rem;
   position: relative;
   background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
   color: #fff;
-  padding-top: 5rem;
-  height: 20rem;
-  font-size: 2rem; }
+  padding-top: 6rem;
+  height: 12rem; }
   .section--footer h3 {
     display: inline-block;
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%); }
+  @media only screen and (max-width: 75em) {
+    .section--footer {
+      height: 16rem;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .section--footer {
+      font-size: 3rem; } }
 
 div.icons {
   display: inline-block;

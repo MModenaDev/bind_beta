@@ -41,11 +41,12 @@ i {
 .scrollToTop {
 	position: fixed;
 	display: none;
-	bottom: 24rem;
+	bottom: 16rem;
 	right: 2%;
 	font-size: 1.5rem;
 
 	@include respond(tab-land) {
+		bottom: 20rem;
 		right: 3%;
 		font-size: 2rem;
 	}

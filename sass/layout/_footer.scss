@@ -1,13 +1,13 @@
 .section--footer {
 
+  font-size: $footer-font-size;
   position: relative;
   background-image: linear-gradient(to right,
   rgba($color-purple-dark, .9),
   rgba($color-purple, .8));
   color: $color-white;
-  padding-top: 5rem;
-  height: 20rem;
-  font-size: $footer-font-size;
+  padding-top: 6rem;
+  height: 12rem;
 
 	& h3 {
 		display: inline-block;
@@ -16,6 +16,15 @@
 		left: 5%;
 		transform: translateY(-50%);
 	}
+
+  @include respond(tab-land) {
+    height: 16rem;
+    font-size: 4rem;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 3rem;
+  }
 }
 
 div.icons {
