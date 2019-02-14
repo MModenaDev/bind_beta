@@ -14,6 +14,14 @@ i {
 
 .fab {
 	color: $color-white;
+
+	@include respond(tab-land) {
+		font-size: 8rem;
+	}
+
+	@include respond(big-desktop) {
+		font-size: 7rem;
+	}
 }
 
 .fa-chevron-circle-up {
@@ -36,4 +44,9 @@ i {
 	bottom: 24rem;
 	right: 2%;
 	font-size: 1.5rem;
+
+	@include respond(tab-land) {
+		right: 3%;
+		font-size: 2rem;
+	}
 }

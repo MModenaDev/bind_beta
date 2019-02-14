@@ -151,6 +151,13 @@ body {
       top: -webkit-calc(45% + 25rem);
       top: -moz-calc(45% + 25rem);
       top: calc(45% + 25rem); } }
+  @media only screen and (min-width: 112.5em) {
+    .btn--register-beta {
+      font-size: 3.5rem;
+      padding: 2.5rem 9rem;
+      top: -webkit-calc(45% + 25rem);
+      top: -moz-calc(45% + 25rem);
+      top: calc(45% + 25rem); } }
   .btn--register-beta-span {
     display: block;
     transform: skewX(20deg); }
@@ -285,6 +292,12 @@ i {
 
 .fab {
   color: #fff; }
+  @media only screen and (max-width: 75em) {
+    .fab {
+      font-size: 8rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .fab {
+      font-size: 7rem; } }
 
 .fa-chevron-circle-up {
   color: #932bdb;
@@ -301,6 +314,10 @@ i {
   bottom: 24rem;
   right: 2%;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 75em) {
+    .scrollToTop {
+      right: 3%;
+      font-size: 2rem; } }
 
 .bind-logo--main {
   position: absolute;
@@ -311,6 +328,9 @@ i {
   @media only screen and (max-width: 75em) {
     .bind-logo--main {
       height: 21rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .bind-logo--main {
+      height: 18rem; } }
 
 .bind-logo--sub {
   position: absolute;
@@ -323,6 +343,12 @@ i {
   @media only screen and (max-width: 75em) {
     .bind-logo--sub {
       height: 6rem;
+      top: -webkit-calc(45% + 14em);
+      top: -moz-calc(45% + 14em);
+      top: calc(45% + 14rem); } }
+  @media only screen and (min-width: 112.5em) {
+    .bind-logo--sub {
+      height: 5.14rem;
       top: -webkit-calc(45% + 14em);
       top: -moz-calc(45% + 14em);
       top: calc(45% + 14rem); } }

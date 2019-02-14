@@ -41,6 +41,14 @@
       top:         calc(#{$logo-percent-top} + 25rem);
     }
 
+    @include respond(big-desktop) {
+      font-size: 3.5rem;
+      padding: 2.5rem 9rem;
+      top: -webkit-calc(#{$logo-percent-top} + 25rem);
+      top:    -moz-calc(#{$logo-percent-top} + 25rem);
+      top:         calc(#{$logo-percent-top} + 25rem);
+    }
+
     &-span { // Para que o texto não fique torto
       display: block;
       transform: skewX(20deg);

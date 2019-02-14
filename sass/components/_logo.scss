@@ -11,6 +11,10 @@
     @include respond(tab-land) {
       height: 21rem;
     }
+
+    @include respond(big-desktop) {
+      height: 18rem;
+    }
   }
 
   &--sub {
@@ -28,5 +32,12 @@
       top:    -moz-calc(#{$logo-percent-top} + 14em);
       top:         calc(#{$logo-percent-top} + 14rem);
     }
+
+    @include respond(big-desktop) {
+  		height: 5.14rem;
+      top: -webkit-calc(#{$logo-percent-top} + 14em);
+      top:    -moz-calc(#{$logo-percent-top} + 14em);
+      top:         calc(#{$logo-percent-top} + 14rem);
+  	}
   }
 }
