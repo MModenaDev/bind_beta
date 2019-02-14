@@ -236,6 +236,28 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+i {
+  margin-left: 0.5em; }
+
+.fab {
+  color: #fff; }
+
+.fa-chevron-circle-up {
+  color: #932bdb; }
+
+.fa-chevron-circle-up:hover {
+  transform: translateY(0.2rem) scale(1.02);
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border-color: #932bdb; }
+
+#home-btn {
+  display: none;
+  position: fixed;
+  bottom: 22%;
+  right: 2%;
+  z-index: 666; }
+
 .bind-logo--main {
   position: absolute;
   height: 20rem;
@@ -256,12 +278,6 @@ div.icons {
   top: 50%;
   right: 5%;
   transform: translateY(-50%); }
-
-i {
-  margin-left: 0.5em; }
-
-.fab, a {
-  color: #fff; }
 
 .row {
   max-width: 114rem;
