@@ -8,6 +8,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    animation-fill-mode: forwards;
+    animation-name: moveInBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
     @include respond(tab-land) {
       height: 21rem;
     }
@@ -24,7 +29,14 @@
     top:    -moz-calc(#{$logo-percent-top} + 9.5rem);
     top:         calc(#{$logo-percent-top} + 9.5rem);
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
+
+    animation-fill-mode: forwards;
+    animation-name: moveInRight;
+    animation-delay: 1.2s;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
 
     @include respond(tab-land) {
       height: 6rem;

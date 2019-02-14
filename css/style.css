@@ -18,20 +18,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(-2rem); }
+    transform: translateY(-0.5rem) translate(-50%, -50%); }
+  60% {
+    transform: translate(0) translate(-50%, -50%); }
   100% {
-    transform: translate(0);
     opacity: 1; } }
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(-1rem); }
+    transform: translateX(-1rem) translate(-50%, -50%); }
   80% {
-    transform: translate(0.5rem); }
+    transform: translate(0.5rem) translate(-50%, -50%); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0) translate(-50%, -50%); } }
 
 @keyframes fadeIn {
   0% {
@@ -141,7 +142,7 @@ body {
   opacity: 0;
   animation-fill-mode: forwards;
   animation-name: fadeIn;
-  animation-delay: 1.2s;
+  animation-delay: 1.8s;
   animation-duration: 1s;
   transition: all .3s; }
   @media only screen and (max-width: 75em) {
@@ -325,7 +326,11 @@ i {
   height: 14rem;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  animation-fill-mode: forwards;
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease; }
   @media only screen and (max-width: 75em) {
     .bind-logo--main {
       height: 21rem; } }
@@ -340,7 +345,13 @@ i {
   top: -moz-calc(45% + 9.5rem);
   top: calc(45% + 9.5rem);
   left: 50%;
-  transform: translate(-50%, -50%); }
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation-fill-mode: forwards;
+  animation-name: moveInRight;
+  animation-delay: 1.2s;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out; }
   @media only screen and (max-width: 75em) {
     .bind-logo--sub {
       height: 6rem;

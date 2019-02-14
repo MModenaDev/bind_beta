@@ -1,11 +1,14 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(-2rem);
+    transform: translateY(-.5rem) translate(-50%, -50%);
+  }
+
+  60% {
+    transform: translate(0) translate(-50%, -50%);
   }
 
   100% {
-    transform: translate(0);
     opacity: 1;
   }
 }
@@ -13,16 +16,16 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(-1rem);
+    transform: translateX(-1rem) translate(-50%, -50%);
   }
 
   80% {
-    transform: translate(.5rem);
+    transform: translate(.5rem) translate(-50%, -50%);
   }
 
   100% {
     opacity: 1;
-    transform: translate(0);
+    transform: translate(0) translate(-50%, -50%);
   }
 }
 
