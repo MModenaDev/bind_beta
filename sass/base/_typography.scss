@@ -12,7 +12,7 @@
     font-weight: 900;
     opacity:0;
 
-    text-shadow: .2rem .5rem 1rem rgba(0,0,0, .3);
+    text-shadow: .2rem .5rem 1rem rgba($color-black, .3);
 
     animation-fill-mode: forwards;
     animation-name: moveInBottom;
@@ -29,7 +29,7 @@
     font-weight: 700;
     opacity:0;
 
-    text-shadow: .15rem .3rem .8rem rgba(0,0,0, .3);
+    text-shadow: .15rem .3rem .8rem rgba($color-black, .3);
 
     animation-fill-mode:forwards;
     animation-name: moveInRight;
@@ -40,16 +40,13 @@
 }
 
 .heading-secondary {
-  text-transform: uppercase;
   text-align: center;
   backface-visibility: hidden;
 
   font-size: 6rem;
-  letter-spacing: 1rem;
   // margin-right: -1rem;
   font-weight: 900;
-  perspective: 1000;
-  text-shadow: .15rem .3rem .8rem rgba(0,0,0, .3);
+  text-shadow: .15rem .3rem .8rem rgba($color-black, .4);
 
   background-image: linear-gradient(to right,
   rgba($color-purple-dark, .9),

@@ -68,14 +68,11 @@ body {
     animation-delay: .6s; }
 
 .heading-secondary {
-  text-transform: uppercase;
   text-align: center;
   backface-visibility: hidden;
   font-size: 6rem;
-  letter-spacing: 1rem;
   font-weight: 900;
-  perspective: 1000;
-  text-shadow: 0.15rem 0.3rem 0.8rem rgba(0, 0, 0, 0.3);
+  text-shadow: 0.15rem 0.3rem 0.8rem rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
   -webkit-background-clip: text;
   color: transparent; }
@@ -86,8 +83,11 @@ body {
 .u-margin-medium-bottom {
   margin-bottom: 5rem; }
 
-.u-margin-big-bottom {
+.u-margin-large-bottom {
   margin-bottom: 7rem; }
+
+.u-margin-xlarge-bottom {
+  margin-bottom: 14rem; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -209,6 +209,33 @@ body {
     width: 90%;
     text-align: center; }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -4rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 0rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 8rem; }
+    .composition__photo:hover {
+      outline: 1rem solid #932bdb;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .bind-logo--main {
   position: absolute;
   height: 20rem;
@@ -217,21 +244,21 @@ body {
   transform: translate(-50%, -50%); }
 
 .icon--youtube {
-  background: url("../img/social-media.png") no-repeat -76px -133px;
-  width: 42px;
-  height: 30px;
+  background: url("../img/social-media.png") no-repeat -120px -33px;
+  width: 50px;
+  height: 60px;
   display: inline-block; }
 
 .icon--facebook {
-  background: url("../img/social-media.png") no-repeat -89px -77px;
-  width: 18px;
-  height: 38px;
+  background: url("../img/social-media.png") no-repeat -115px -166px;
+  width: 60px;
+  height: 60px;
   display: inline-block; }
 
 .icon--twitter {
-  background: url("../img/social-media.png") -86px -25px;
-  width: 28px;
-  height: 36px;
+  background: url("../img/social-media.png") no-repeat -121px -273px;
+  width: 46px;
+  height: 60px;
   display: inline-block; }
 
 .section--footer h3 {
@@ -289,7 +316,8 @@ div.icons span {
   position: relative;
   color: #932bdb;
   padding-top: 5rem;
-  height: 100vh; }
+  height: 100vh;
+  background-color: #eee; }
 
 .section--footer {
   position: relative;
