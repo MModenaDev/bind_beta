@@ -243,24 +243,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.icon--youtube {
-  background: url("../img/social-media.png") no-repeat -76px -133px;
-  width: 42px;
-  height: 30px;
-  display: inline-block; }
-
-.icon--facebook {
-  background: url("../img/social-media.png") no-repeat -89px -77px;
-  width: 18px;
-  height: 38px;
-  display: inline-block; }
-
-.icon--twitter {
-  background: url("../img/social-media.png") no-repeat -86px -25px;
-  width: 28px;
-  height: 36px;
-  display: inline-block; }
-
 .section--footer h3 {
   display: inline-block;
   position: absolute;
@@ -275,8 +257,11 @@ div.icons {
   right: 5%;
   transform: translateY(-50%); }
 
-div.icons span {
-  margin-left: 1em; }
+i {
+  margin-left: 0.5em; }
+
+.fab, a {
+  color: #fff; }
 
 .row {
   max-width: 114rem;
