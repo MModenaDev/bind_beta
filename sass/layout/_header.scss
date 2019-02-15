@@ -11,4 +11,10 @@
 
   position: relative;
   font-size: 3rem;
+
+  &-register {
+    position: relative;
+    background-image: linear-gradient(to bottom, $color-purple-dark, $color-purple);
+    height: 100vh;
+  }
 }

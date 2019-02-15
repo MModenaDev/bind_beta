@@ -1,0 +1,12 @@
+.line {
+
+  &__normal {
+    width: 95%;
+    margin: 0 2.5%;
+    border-radius: 50%;
+    color: $color-gray-darker;
+    background-image: linear-gradient(to bottom, rgba($color-gray-darker, .7), rgba($color-gray-darker, .5), rgba($color-gray-darker, .2));
+    padding-bottom: .5rem;
+    border: 0;
+  }
+}

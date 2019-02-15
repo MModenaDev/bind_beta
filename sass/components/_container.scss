@@ -1,0 +1,10 @@
+.container {
+
+
+  &-register {
+    @include absCenter;
+    display: block;
+    height: 55rem;
+    width: 50rem;
+  }
+}
