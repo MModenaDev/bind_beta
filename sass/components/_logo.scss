@@ -8,8 +8,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    opacity: 0;
+
     animation-fill-mode: forwards;
     animation-name: moveInBottom;
+    animation-delay: $header-animation-delay;
     animation-duration: 2s;
     animation-timing-function: ease;
 

@@ -120,6 +120,12 @@ body {
 .u-margin-xlarge-bottom {
   margin-bottom: 14rem; }
 
+.u-padding-small-top {
+  padding-top: 3rem; }
+
+.u-padding-medium-top {
+  padding-top: 5rem; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   display: inline-block;
@@ -327,8 +333,10 @@ i {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
   animation-fill-mode: forwards;
   animation-name: moveInBottom;
+  animation-delay: 0.5s;
   animation-duration: 2s;
   animation-timing-function: ease; }
   @media only screen and (max-width: 75em) {
@@ -377,25 +385,25 @@ i {
   top: 10%;
   left: 25%; }
 
-.section--footer {
+.section-footer {
   font-size: 2rem;
   position: relative;
   background-image: linear-gradient(to right, rgba(89, 43, 142, 0.9), rgba(147, 43, 219, 0.8));
   color: #fff;
   padding-top: 6rem;
   height: 12rem; }
-  .section--footer h3 {
+  .section-footer h3 {
     display: inline-block;
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%); }
   @media only screen and (max-width: 75em) {
-    .section--footer {
+    .section-footer {
       height: 16rem;
       font-size: 4rem; } }
   @media only screen and (min-width: 112.5em) {
-    .section--footer {
+    .section-footer {
       font-size: 3rem; } }
 
 div.icons {
@@ -439,9 +447,14 @@ div.icons {
   position: relative;
   font-size: 3rem; }
 
-.section--about {
+.section-about {
   position: relative;
   color: #932bdb;
   padding-top: 5rem;
   height: 100vh;
-  background-color: #eee; }
+  background-color: #f5f5f5; }
+  .section-about--text {
+    padding-top: 2rem;
+    text-align: justify;
+    font-size: 2.1rem;
+    text-shadow: 0.15rem 0.3rem 2rem rgba(0, 0, 0, 0.3); }
