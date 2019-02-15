@@ -317,7 +317,7 @@ i {
     stroke-width: 2;
     stroke: #C8CCD4; }
   .btn-radio svg path {
-    stroke: #008FFF; }
+    stroke: #932bdb; }
     .btn-radio svg path.inner {
       stroke-width: 6;
       stroke-dasharray: 19;
@@ -326,30 +326,6 @@ i {
       stroke-width: 2;
       stroke-dasharray: 57;
       stroke-dashoffset: 57; }
-
-.btn-submit {
-  -moz-box-shadow: 0.5rem 0.5rem 2rem 0 #353535;
-  -webkit-box-shadow: 0.5rem 0.5rem 2rem 0 #353535;
-  box-shadow: 0.5rem 0.5rem 2rem rgba(53, 53, 53, 0.3);
-  background-color: transparent;
-  -moz-border-radius: 2.5rem;
-  -webkit-border-radius: 2.5rem;
-  border-radius: 2.5rem;
-  border: 0.3rem solid #353535;
-  display: inline-block;
-  cursor: pointer;
-  color: #353535;
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding: 1.5rem 7rem;
-  text-decoration: none;
-  transition: all .2s; }
-  .btn-submit:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0.5rem 2rem 4rem rgba(53, 53, 53, 0.4); }
-  .btn-submit:active {
-    transform: translateY(-0.3rem);
-    box-shadow: 0.5rem 1rem 2rem rgba(53, 53, 53, 0.3); }
 
 .line__normal {
   width: 95%;
