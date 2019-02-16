@@ -1,17 +1,3 @@
-.cntr {
-  margin: auto;
-}
-
-.btn-radio {
-  cursor: pointer;
-  display: inline-block;
-  // float: left;
-  -webkit-user-select: none;
-  user-select: none;
-  margin-left: 3rem;
-
-}
-
 // @media screen and (max-width: 480px) {
 //   .btn-radio {
 //     display: block;
@@ -24,6 +10,12 @@
 // }
 
 .btn-radio {
+
+  cursor: pointer;
+  display: inline-block;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-left: 3rem;
 
   & input {
     display: none;
