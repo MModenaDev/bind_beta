@@ -135,8 +135,7 @@ body {
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   display: inline-block;
-  cursor: pointer;
-  box-shadow: 0.4rem 1rem 2rem rgba(0, 0, 0, 0.5); }
+  cursor: pointer; }
 
 .btn--register-beta {
   font-size: 3rem;
@@ -145,6 +144,7 @@ body {
   outline: none;
   padding: 1rem 4.5rem;
   color: #932bdb;
+  box-shadow: 0.4rem 1rem 2rem rgba(0, 0, 0, 0.5);
   position: absolute;
   top: -webkit-calc(45% + 17rem);
   top: -moz-calc(45% + 17rem);
@@ -181,14 +181,59 @@ body {
     transform: translate(-50%, -50%) translateY(-0.4rem) skewX(-20deg) scale(1.03);
     box-shadow: 0.45rem 1.1rem 2.25rem rgba(0, 0, 0, 0.5); }
 
+.btn--research {
+  backface-visibility: hidden;
+  outline: none;
+  padding: .6rem 5rem;
+  color: #353535;
+  box-shadow: .6rem .6rem 0 black, .6rem .6rem 2rem black;
+  margin: -.5rem 0 0 12rem;
+  transform: skewX(-15deg); }
+  .btn--research-span {
+    font-size: 2.2rem;
+    transform: skewX(15deg);
+    font-weight: 600; }
+
 .btn--white {
   background-color: #fff; }
+
+.btn-radio {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-left: 3rem; }
+  .btn-radio input {
+    display: none; }
+    .btn-radio input:checked + svg path {
+      transition: all 0.4s ease; }
+    .btn-radio input:checked + svg path.inner {
+      stroke-dashoffset: 38;
+      transition-delay: 0.3s; }
+    .btn-radio input:checked + svg path.outer {
+      stroke-dashoffset: 0; }
+  .btn-radio svg {
+    fill: none;
+    vertical-align: middle; }
+    .btn-radio svg circle {
+      stroke-width: 2;
+      stroke: #C8CCD4; }
+    .btn-radio svg path {
+      stroke: #932bdb; }
+      .btn-radio svg path.inner {
+        stroke-width: 6;
+        stroke-dasharray: 19;
+        stroke-dashoffset: 19; }
+      .btn-radio svg path.outer {
+        stroke-width: 2;
+        stroke-dasharray: 57;
+        stroke-dashoffset: 57; }
 
 .card {
   height: 100%;
   background-color: #fff;
   border-radius: 7%;
-  box-shadow: 0.15rem 2rem 5rem rgba(0, 0, 0, 0.6); }
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.6); }
   .card__question {
     color: #353535;
     padding: 3rem 1.5rem 2rem 1.5rem;
@@ -289,38 +334,6 @@ i {
       bottom: 20rem;
       right: 3%;
       font-size: 2rem; } }
-
-.btn-radio {
-  cursor: pointer;
-  display: inline-block;
-  -webkit-user-select: none;
-  user-select: none;
-  margin-left: 3rem; }
-  .btn-radio input {
-    display: none; }
-    .btn-radio input:checked + svg path {
-      transition: all 0.4s ease; }
-    .btn-radio input:checked + svg path.inner {
-      stroke-dashoffset: 38;
-      transition-delay: 0.3s; }
-    .btn-radio input:checked + svg path.outer {
-      stroke-dashoffset: 0; }
-  .btn-radio svg {
-    fill: none;
-    vertical-align: middle; }
-    .btn-radio svg circle {
-      stroke-width: 2;
-      stroke: #C8CCD4; }
-    .btn-radio svg path {
-      stroke: #932bdb; }
-      .btn-radio svg path.inner {
-        stroke-width: 6;
-        stroke-dasharray: 19;
-        stroke-dashoffset: 19; }
-      .btn-radio svg path.outer {
-        stroke-width: 2;
-        stroke-dasharray: 57;
-        stroke-dashoffset: 57; }
 
 .line__normal {
   width: 95%;
