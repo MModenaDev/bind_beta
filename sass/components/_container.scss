@@ -1,24 +1,29 @@
 .container {
 
+  &-radio {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+  }
 
   &-register {
     @include absCenter;
     display: block;
-    height: 60rem;
-    width: 55rem;
+    height: 75%;
+    width: 35%;
 
-    @include respond(tab-land) {
-      height: 60rem;
-      width: 60rem;
-    }
+    // @include respond(tab-land) {
+    //   height: 60rem;
+    //   width: 60rem;
+    // }
 
-    @include respond(tab-port) {
-      height: 65rem;
-      width: 65rem;
-    }
+    // @include respond(tab-port) {
+    //   height: 65rem;
+    //   width: 65rem;
+    // }
 
-    @include respond(big-desktop) {
-      width: 55rem;
-    }
+    // @include respond(big-desktop) {
+    //   width: 55rem;
+    // }
   }
 }

@@ -7,9 +7,11 @@
 
   &__question {
     color: $color-gray-darker;
-    padding: 3rem 2rem 2rem 2rem;
+    // padding: 3rem 2rem 2rem 2rem;
+    padding: 3vh;
     text-align: center;
-    font-size: 2.6rem;
+    // font-size: 2.6rem;
+    font-size: 3.2vh;
     font-weight: 900;
     text-shadow: .03rem .03rem 0 $color-gray-darker;
   }
@@ -20,15 +22,21 @@
 
   &__alternatives {
     list-style-type: none;
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+
+    &:first-child {
+      margin-top: 3vh;
+    }
 
     &:last-child {
-      margin-top: -.5rem;
+      // margin-top: -.5rem;
+      margin-top: -2vh;
       text-align: center;
     }
 
     &:not(:last-child) {
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
+      margin-bottom: 4vh;
     }
   }
 }
@@ -39,7 +47,8 @@
     color: $color-gray-darker;
     display: inline-block;
     font-weight: 900;
-    font-size: 2.6rem;
+    // font-size: 2.6rem;
+    font-size: 1.4vw;
     margin-left: 1.8rem;
     text-shadow: .03rem .03rem 0 $color-gray-darker;
   }
@@ -47,7 +56,8 @@
   &__description {
     color: $color-gray-darker;
     font-weight: 500;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    font-size: 1.1vw;
     margin-left: 5.3rem;
   }
 }

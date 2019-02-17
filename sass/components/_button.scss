@@ -15,7 +15,7 @@
     outline: none;
     padding: 1rem 4.5rem;
     color: $color-purple;
-    box-shadow: .4rem 1rem 2rem rgba($color-black, .5);
+    // box-shadow: .4rem 1rem 2rem rgba($color-black, .5);
 
     position: absolute;
     top: -webkit-calc(#{$logo-percent-top} + 17rem);
@@ -55,12 +55,12 @@
 
     &:hover {
       transform: translate(-50%, -50%) translateY(-.8rem) skewX(-20deg) scale(1.03);
-      box-shadow: .6rem 1.5rem 3rem rgba($color-black, .5);
+      // box-shadow: .6rem 1.5rem 3rem rgba($color-black, .5);
     }
 
     &:active {
       transform: translate(-50%, -50%) translateY(-.4rem) skewX(-20deg) scale(1.03);
-      box-shadow: .45rem 1.1rem 2.25rem rgba($color-black, .5);
+      // box-shadow: .45rem 1.1rem 2.25rem rgba($color-black, .5);
     }
   }
 
@@ -68,13 +68,16 @@
     // background-color: rgba($color-purple, .4);
     backface-visibility: hidden;
     outline: none;
-    padding: .6rem 5rem;
+    // padding: .6rem 5rem;
+    padding: 1.5vh 8vh;
     color: $color-gray-darker;
     box-shadow: .4rem .4rem 0 black, .4rem .4rem 2rem rgba($color-black, .4);
     transform: skewX(-15deg);
-    font-size: 2.2rem;
+    // font-size: 2.2rem;
+    font-size: 3vh;
     font-weight: 600;
-    margin-top: 2rem;
+    // margin-top: 2rem;
+    margin-top: 3vh;
 
     transition: all .4s ease;
 
