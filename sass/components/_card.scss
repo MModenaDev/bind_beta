@@ -3,6 +3,7 @@
   background-color: $color-white;
   border-radius: 7%;
   box-shadow: 2rem 2rem 3rem rgba($color-black, .6);
+  border: .2rem solid rgba($color-gray-darker, .9);
 
   &__question {
     color: $color-gray-darker;
@@ -20,6 +21,11 @@
   &__alternatives {
     list-style-type: none;
     font-size: 1.8rem;
+
+    &:last-child {
+      margin-top: -.5rem;
+      text-align: center;
+    }
 
     &:not(:last-child) {
       margin-bottom: 3rem;
