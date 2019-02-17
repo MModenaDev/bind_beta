@@ -4,7 +4,21 @@
   &-register {
     @include absCenter;
     display: block;
-    height: 55rem;
-    width: 50rem;
+    height: 60rem;
+    width: 55rem;
+
+    @include respond(tab-land) {
+      height: 60rem;
+      width: 60rem;
+    }
+
+    @include respond(tab-port) {
+      height: 65rem;
+      width: 65rem;
+    }
+
+    @include respond(big-desktop) {
+      width: 55rem;
+    }
   }
 }

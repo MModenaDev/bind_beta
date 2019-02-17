@@ -3,13 +3,13 @@
   background-color: $color-white;
   border-radius: 7%;
   box-shadow: 2rem 2rem 3rem rgba($color-black, .6);
-  border: .2rem solid rgba($color-gray-darker, .9);
+  // border: .2rem solid rgba($color-gray-darker, .9);
 
   &__question {
     color: $color-gray-darker;
-    padding: 3rem 1.5rem 2rem 1.5rem;
+    padding: 3rem 2rem 2rem 2rem;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 900;
     text-shadow: .03rem .03rem 0 $color-gray-darker;
   }
